@@ -1,2 +1,0 @@
-Set-Location "C:\Users\rladuca\OneDrive - USUI\Documents\PoSh_Stuff"
-function Test-IsAdmin {([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")}
