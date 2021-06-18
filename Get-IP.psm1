@@ -30,8 +30,8 @@ If ($_.IPAddress -match "169.") {
 
 $Item00 = $_
 ($Item00 | Out-String).Split("`n|`r",[System.StringSplitOptions]::RemoveEmptyEntries) | % {
-If ($Item00.Status -match "Disconnected") {Write-Host ">> " -fore Red -No }
-If ($Item00.Status -match "Up") {Write-Host "<< " -fore Green -No }
+If ($Item00.Status -match "Disconnected") {Write-Host "█ " -fore Red -No }
+If ($Item00.Status -match "Up") {Write-Host "█ " -fore Green -No }
 If ($_ -match "Index") {Write-Host " " $_ -ForegroundColor cyan} 
 If ($_ -match "Alias") {Write-Host " " $_ -ForegroundColor Yellow} 
 If ($_ -match ": Up") {Write-Host " " $_ -ForegroundColor Green} 
